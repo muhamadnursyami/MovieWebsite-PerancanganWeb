@@ -49,8 +49,8 @@
                 </ul>
             </nav>
             <div class="navbar-actions">
-                <form action="#" class="navbar-form">
-                    <input type="text" name="search" placeholder="Search movies..." class="navbar-form-search">
+                <form id="form" action="#" class="navbar-form">
+                    <input type="text" id="search" name="search" placeholder="Search movies..." class="navbar-form-search">
                     <button class="navbar-form-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
@@ -69,9 +69,9 @@
       <!-- END HEADER -->
 
       <!-- START MOVIES  -->
-      <div class="movies-page">
-        <div class="movies-grid">
-          <div class="movie-card">
+      <div  class="movies-page">
+        <div id="movies-grid" class="movies-grid">
+          <!-- <div class="movie-card">
             <div class="card-head">
               <img
                 src="./images/movies/red-notice.jpg"
@@ -558,7 +558,7 @@
                 <span class="year">2019</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <button class="load-more">LOAD MORE</button>
@@ -583,5 +583,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

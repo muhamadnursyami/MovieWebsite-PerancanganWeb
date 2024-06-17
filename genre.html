@@ -68,7 +68,7 @@
     </header>
       <!-- END HEADER -->
       <!-- START GENRE  -->
-      <div class="genre-page">
+      <div id="genre-page" class="genre-page">
         <div id="tags">
           <div class="tag">Action</div>
           <div class="tag">Adventure</div>
@@ -90,169 +90,9 @@
           <div class="tag">War</div>
           <div class="tag">Western</div>
         </div>
-        <div class="no-result">
-          <h2>Hasil tidak ditemukan...</h2>
+        <div class="no-result-genre" id="no-result-genre"> 
         </div>
-
-        <div class="movies-grid">
-          <div class="movie-card">
-            <div class="card-head">
-              <img
-                src="./images/movies/red-notice.jpg"
-                class="card-img"
-                alt=""
-              />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>7.5</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">Red Notice</h3>
-              <div class="card-info">
-                <span class="genre">Action/Comedy</span>
-                <span class="year">2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="card-head">
-              <img
-                src="./images/movies/spider-men.jpg"
-                class="card-img"
-                alt=""
-              />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>7.4</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">Spider-Man: Homecoming</h3>
-              <div class="card-info">
-                <span class="genre">Action/Adventure</span>
-                <span class="year">2017</span>
-              </div>
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="card-head">
-              <img src="./images/movies/matrix.jpg" class="card-img" alt="" />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>N/A</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">The Matrix Resurrections</h3>
-              <div class="card-info">
-                <span class="genre">Sci-fi/Action</span>
-                <span class="year">2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="card-head">
-              <img src="./images/movies/eternals.jpg" class="card-img" alt="" />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>6.8</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">Eternals</h3>
-              <div class="card-info">
-                <span class="genre">Adventure/Action</span>
-                <span class="year">2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="card-head">
-              <img src="./images/movies/dune.jpg" class="card-img" alt="" />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>8.2</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">Dune</h3>
-              <div class="card-info">
-                <span class="genre">Sci-fi/Adventure</span>
-                <span class="year">2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="card-head">
-              <img src="./images/movies/1917.jpg" class="card-img" alt="" />
-              <div class="card-overlay">
-                <div class="bookmark">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="rating">
-                  <ion-icon name="star-outline"></ion-icon>
-                  <span>8.3</span>
-                </div>
-                <div class="play">
-                  <ion-icon name="play-circle-outline"></ion-icon>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">1917</h3>
-              <div class="card-info">
-                <span class="genre">War/Drama</span>
-                <span class="year">2019</span>
-              </div>
-            </div>
-          </div>
+        <div class="movies-grid" id="movies-genre">
         </div>
       </div>
       <!-- GENRE MOVIES  -->
@@ -275,5 +115,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

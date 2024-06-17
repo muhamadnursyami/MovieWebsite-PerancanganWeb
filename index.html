@@ -41,8 +41,8 @@
                     </ul>
                 </nav>
                 <div class="navbar-actions">
-                    <form action="#" class="navbar-form">
-                        <input type="text" name="search" placeholder="Search movies..." class="navbar-form-search">
+                    <form id="form" action="#" class="navbar-form">
+                        <input type="text" id="search" name="search" placeholder="Search movies..." class="navbar-form-search">
                         <button class="navbar-form-btn">
                             <ion-icon name="search-outline"></ion-icon>
                         </button>
@@ -53,8 +53,6 @@
                     <button class="navbar-search-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
-        
-        
                 </div>
             </div>
         </header>
@@ -71,23 +69,15 @@
                             <div class="card-content">
                                 <span>Transformers series</span>
                                 <h1 class="card-title">Transformers: <br />Revenge of the Fallen</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
-                        <!-- <swiper-slide>
-                            <img src="./images/main2.jpg" class="banner-img" alt="" />
-                            <div class="card-content">
-                                <span>TSin City</span>
-                                <h1 class="card-title">Sin City: <br />A Dame to Kill For</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
-                            </div>
-                        </swiper-slide> -->
                         <swiper-slide>
                             <img src="./images/main3.jpeg" class="banner-img" alt="" />
                             <div class="card-content">
                                 <span>KUNGFU PANDA</span>
                                 <h1 class="card-title">Kungfu: <br />Panda 4</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -95,7 +85,7 @@
                             <div class="card-content">
                                 <span>Interstellar</span>
                                 <h1 class="card-title">Interstellar <br />2014</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -103,7 +93,7 @@
                             <div class="card-content">
                                 <span>World War Z</span>
                                 <h1 class="card-title">World War Z <br />2013</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -111,7 +101,7 @@
                             <div class="card-content">
                                 <span>DORA</span>
                                 <h1 class="card-title">Dora and the Lost <br />City of Gold 2019</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -119,7 +109,7 @@
                             <div class="card-content">
                                 <span>Marvel Universe</span>
                                 <h1 class="card-title">Thor: <br />Love and Thunder</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -127,7 +117,7 @@
                             <div class="card-content">
                                 <span>Marvel Universe</span>
                                 <h1 class="card-title">Spider-Man <br />No Way Home</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                         <swiper-slide>
@@ -135,7 +125,7 @@
                             <div class="card-content">
                                 <span>Marvel Universe</span>
                                 <h1 class="card-title">Avengers: <br />End Game</h1>
-                                <a href="" class="btn btn-utama">Wacthing Now</a>
+                                <!-- <a href="" class="btn btn-utama">Wacthing Now</a> -->
                             </div>
                         </swiper-slide>
                     </swiper-container>
@@ -149,8 +139,8 @@
             <div class="popular-movies">
                 <h1>Popular Videos</h1>
             </div>
-            <div class="movies-grid">
-                <div class="movie-card">
+            <div id="movies-popular" class="movies-grid">
+                <!-- <div class="movie-card">
                     <div class="card-head">
                         <img src="./images/movies/red-notice.jpg" class="card-img" alt="">
                         <div class="card-overlay">
@@ -168,7 +158,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="card-body">
                         <h3 class="card-title">Red Notice</h3>
                         <div class="card-info">
@@ -176,8 +165,8 @@
                             <span class="year">2021</span>
                         </div>
                     </div>
-                </div>
-                <div class="movie-card">
+                </div> -->
+                <!-- <div class="movie-card">
                     <div class="card-head">
                         <img src="./images/movies/spider-men.jpg" class="card-img" alt="">
                         <div class="card-overlay">
@@ -640,7 +629,7 @@
                             <span class="year">2019</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -668,6 +657,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 

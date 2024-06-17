@@ -33,3 +33,12 @@
   text-align: center;
   margin-top: 40px;
 }
+.tag.highlight {
+  background-color: red;
+}
+
+.no-result-genre {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
