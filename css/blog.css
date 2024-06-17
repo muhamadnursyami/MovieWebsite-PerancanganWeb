@@ -1,0 +1,104 @@
+@import url(./variable.css);
+@import url(./reset.css);
+
+.main {
+  max-width: 1440px;
+  margin: auto;
+}
+.movies-news-h1 {
+  margin-bottom: 50px;
+}
+.blog-page {
+  padding: 0 120px;
+  margin: 30px 0;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn a {
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+  background: white;
+  color: hsl(325, 87%, 55%);
+  text-align: end;
+}
+.btn a:hover {
+  background-color: rgb(192, 7, 99);
+  border-radius: 20px;
+  color: white;
+}
+
+.read-blog {
+  text-align: end;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: hsl(325, 87%, 55%);
+  border-radius: 10px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover .card_image {
+  transform: scale(1.1);
+}
+
+.card_content {
+  padding: 1rem;
+  background: hsl(325, 87%, 55%);
+  text-align: start;
+}
+.info-blog {
+  text-align: start;
+}
+.card_title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+.card_title:hover {
+  color: rgb(235, 206, 220);
+}

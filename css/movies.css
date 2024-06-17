@@ -1,0 +1,22 @@
+@import url(./variable.css);
+@import url(./reset.css);
+
+.movies-page {
+  padding: 0 var(--px);
+  margin-bottom: 100px;
+}
+
+.load-more {
+  background: rgb(245, 10, 127);
+  display: block;
+  padding: 10px 30px;
+  margin: auto;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-5);
+  border-radius: 15px;
+  color: var(--white);
+}
+
+.load-more:hover {
+  background: rgb(192, 7, 99);
+}

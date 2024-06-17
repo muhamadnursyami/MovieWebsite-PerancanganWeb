@@ -1,0 +1,35 @@
+@import url(./variable.css);
+@import url(./reset.css);
+
+.genre-page {
+  padding: 0 var(--px);
+  margin: 100px 0;
+}
+
+#tags {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tag {
+  color: white;
+  padding: 20px 40px;
+  background: rgb(245, 10, 127);
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.tag:hover {
+  cursor: pointer;
+  background: rgb(192, 7, 99);
+}
+
+.no-result {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 40px;
+}

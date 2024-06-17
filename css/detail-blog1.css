@@ -1,0 +1,57 @@
+@import url(./variable.css);
+@import url(./reset.css);
+
+.detail-blog1 {
+  padding: 0 200px;
+  margin: 40px 0;
+  text-align: center;
+}
+.detail-blog1 h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: start;
+}
+.detail-blog1 h1 {
+  text-align: start;
+}
+ion-icon:hover {
+  color: rgb(245, 10, 127);
+}
+.icon-socialmedia {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.icon-socialmedia a {
+  margin-right: 20px;
+}
+.content {
+  margin-top: 20px;
+}
+.content h3 {
+  text-align: start;
+}
+.content p {
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.btn {
+  margin-top: 40px;
+  text-align: center;
+}
+.btn a {
+  text-align: center;
+  background: rgb(245, 10, 127);
+  display: inline-block;
+  padding: 10px 30px;
+  margin: auto;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-5);
+  border-radius: 20px;
+  color: var(--white);
+}
+.btn a:hover {
+  background: rgb(192, 7, 99);
+}
