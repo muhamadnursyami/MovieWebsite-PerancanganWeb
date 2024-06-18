@@ -20,3 +20,43 @@
 .load-more:hover {
   background: rgb(192, 7, 99);
 }
+
+.pagination {
+  display: flex;
+  margin: 10px 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.page {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f50a7f;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.page.disabled {
+  cursor: not-allowed;
+  color: grey;
+}
+
+.current {
+  background-color: #f50a7f;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  /* font-weight: 600; */
+}
+
+.know-more {
+  background-color: #f50a7f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}

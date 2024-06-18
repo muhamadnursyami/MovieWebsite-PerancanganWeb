@@ -4,16 +4,10 @@ const BASE_URL = "https://api.themoviedb.org/3";
 const POPULAR_MOVIES_URL = BASE_URL + "/movie/popular?" + API_KEY;
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 const searchURL = "https://api.themoviedb.org/3/search/movie?query=";
-const MOVIES_PAGE_URL = BASE_URL + "/trending/movie/week?" + API_KEY;
-const MOVIRES_GENRE = BASE_URL + "/discover/movie?";
 
 const movies_popular = document.getElementById("movies-popular");
-const movies_pages = document.getElementById("movies-grid");
-const movies_genre = document.getElementById("movies-genre");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-const tagsGenre = document.getElementById("tags");
-const noResultGenrePage = document.getElementById("no-result-genre");
 
 // HALAMAN HOME PAGE
 getMoviesPopular(POPULAR_MOVIES_URL);
