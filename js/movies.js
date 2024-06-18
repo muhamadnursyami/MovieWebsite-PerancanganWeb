@@ -15,24 +15,23 @@ const search = document.getElementById("search");
 const tagsGenre = document.getElementById("tags");
 const noResultGenrePage = document.getElementById("no-result-genre");
 
-// HALAMAN HOME PAGE
-getMoviesPopular(POPULAR_MOVIES_URL);
+// HALAMAN MOVIES PAGES
 
-function getMoviesPopular(url) {
+getMoviesPages(MOVIES_PAGE_URL);
+
+function getMoviesPages(url) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data.results);
-      moviesPopular(data.results);
+      //   console.log(data.results);
+      moviesPages(data.results);
     });
 }
-
-function moviesPopular(data) {
-  movies_popular.innerHTML = "";
+function moviesPages(data) {
+  movies_pages.innerHTML = "";
 
   data.forEach((movie) => {
     const { poster_path, title, vote_average, release_date } = movie;
-
     const date = release_date.split("-")[0];
     const elementMovie = document.createElement("div");
     elementMovie.classList.add("movie-card");
@@ -64,7 +63,7 @@ function moviesPopular(data) {
                     </div>
     `;
 
-    movies_popular.appendChild(elementMovie);
+    movies_pages.appendChild(elementMovie);
   });
 }
 
@@ -74,6 +73,6 @@ form.addEventListener("submit", (e) => {
   const searchTerm = search.value;
 
   if (searchTerm) {
-    getMoviesPopular(searchURL + searchTerm + "&" + API_KEY);
+    getMoviesPages(searchURL + searchTerm + "&" + API_KEY);
   }
 });
