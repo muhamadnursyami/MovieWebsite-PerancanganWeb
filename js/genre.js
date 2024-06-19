@@ -168,12 +168,14 @@ function moviesGenre(data) {
   movies_genre.innerHTML = "";
 
   data.forEach((movie) => {
-    const { poster_path, title, vote_average, release_date } = movie;
+    const { id, poster_path, title, vote_average, release_date } = movie;
 
     const date = release_date.split("-")[0];
     const elementMovie = document.createElement("div");
     elementMovie.classList.add("movie-card");
-
+    elementMovie.addEventListener("click", function () {
+      window.location.href = `detail-movies.html?id=${id}`;
+    });
     elementMovie.innerHTML = `
                     <div class="card-head">
                         <img src="${
@@ -197,7 +199,6 @@ function moviesGenre(data) {
                     <div class="card-body">
                         <h3 class="card-title">${title}</h3>
                         <div class="card-info">
-                            <span class="genre">Action/Comedy</span>
                             <span class="year">${date}</span>
                         </div>
                     </div>
