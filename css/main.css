@@ -304,11 +304,23 @@ swiper-slide img {
 
 footer {
   border-top: 1px solid #5c1d41;
-  /* border-top: 1px solid #ffffff; */
-  padding-top: 100px, 0;
+  padding: 50px, 0;
 }
-footer p {
-  padding: 30px 0;
+footer .copy-right p {
+  padding-bottom: 15px;
   text-align: center;
   color: var(--light-pink);
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+footer .social-media a {
+  margin: 0 10px;
+  padding: 25px 0 10px 0;
+  text-align: center;
+  color: var(--light-pink);
+}
+footer .social-media a:hover {
+  color: white;
 }
